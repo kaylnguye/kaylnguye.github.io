@@ -1,92 +1,125 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f7f5f2;
-    color: #4a4a4a;
-    margin: 0;
-}
-
-.custom-nav {
-    background-color: #1f1f1f;
-    padding: 15px;
-}
-
-.navbar-brand {
-    color: white !important;
-    font-weight: bold;
-}
-
-.nav-link {
-    color: white !important;
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-.hero {
-    padding: 150px 0;
-    background: #eae6df;
-}
-
-.section {
-    padding: 100px 0;
-}
-
-.alt-bg {
-    background-color: #eae6df;
-}
-
-.project-card {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-8px);
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    display: inline-block;
-    background: #8c6f5c;
-    color: white;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 20px;
-}
-
-.custom-btn {
-    background-color: #8c6f5c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-.custom-btn:hover {
-    background-color: #6f5647;
-}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kayla Nguyen | Chemical Engineering</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7f5f2;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white !important;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 160px 0 120px 0;
+  background: #eae6df;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.alt-bg {
+  background-color: #eae6df;
+}
+
+/* Project Cards */
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: inline-block;
+  background: #8c6f5c;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* Buttons */
+.custom-btn {
+  background-color: #8c6f5c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.custom-btn:hover {
+  background-color: #6f5647;
+}
+
+/* Research Section Hidden by Default */
+#alpha-alumina {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+</style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">Kayla Nguyen</a>
     <div>
@@ -99,26 +132,28 @@ body {
   </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero text-center">
+<!-- HERO -->
+<section class="hero">
   <div class="container">
     <h1>Kayla Nguyen</h1>
-    <p class="lead">Chemical Engineering Student</p>
+    <p class="lead">Chemical Engineering Major</p>
     <p>Interested in Petrochemicals & Pharmaceuticals</p>
   </div>
 </section>
 
-<!-- About -->
+<!-- ABOUT -->
 <section id="about" class="section">
   <div class="container">
     <h2>About Me</h2>
     <p>
-      I am a chemical engineering major interested in catalysis and crystal engineering. I plan to pursue in either petrochemical systems or pharmaceutical development.
+      I am a Chemical Engineering student passionate about catalysis,
+      crystallization, and industrial process optimization. My academic
+      interests span petrochemical systems and pharmaceutical development.
     </p>
   </div>
 </section>
 
-<!-- Projects -->
+<!-- PROJECTS -->
 <section id="projects" class="section alt-bg">
   <div class="container">
     <h2>Research & Projects</h2>
@@ -127,15 +162,15 @@ body {
       <div class="col-md-6">
         <div class="project-card">
           <h4>Tuning Morphology of Alpha-Alumina as a Catalyst Support</h4>
-          <p>Engineering catalyst supports for improved EO catalytic performance.</p>
-          <a href="alpha-alumina.html" class="btn custom-btn">View Research</a>
+          <p>Engineering catalyst supports to improve EO catalytic performance.</p>
+          <button class="custom-btn" onclick="showResearch()">View Research</button>
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="project-card">
           <h4>Template-Induced Nucleation of Pyrazinamide</h4>
-          <p>Pharmaceutical crystallization using fatty acid templating strategies.</p>
+          <p>Studied pharmaceutical crystallization via fatty acid templating strategies.</p>
         </div>
       </div>
 
@@ -143,7 +178,29 @@ body {
   </div>
 </section>
 
-<!-- Skills -->
+<!-- ALPHA ALUMINA RESEARCH PAGE (Embedded Section) -->
+<section id="alpha-alumina" class="section">
+  <div class="container">
+    <h2>Alpha-Alumina Catalyst Support Research</h2>
+
+    <p>
+      This research focuses on tuning the morphology of alpha-alumina
+      to optimize surface area, porosity, and catalyst-support interactions
+      for enhanced ethylene oxide production efficiency.
+    </p>
+
+    <h4>Research Objectives</h4>
+    <ul>
+      <li>Control particle morphology</li>
+      <li>Enhance pore structure</li>
+      <li>Improve catalytic stability</li>
+    </ul>
+
+    <button class="custom-btn" onclick="hideResearch()">Back to Main Page</button>
+  </div>
+</section>
+
+<!-- SKILLS -->
 <section id="skills" class="section">
   <div class="container">
     <h2>Technical Skills</h2>
@@ -157,25 +214,5 @@ body {
   </div>
 </section>
 
-<!-- Fun -->
-<section id="fun" class="section alt-bg">
-  <div class="container">
-    <h2>Fun Facts</h2>
-    <ul>
-      <li>I play tennis 🎾</li>
-      <li>I like reading 📚</li>
-      <li>I enjoy trying new foods 🍜</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section text-center">
-  <div class="container">
-    <h2>Connect with me!</h2>
-    <p>Email: <a href="mailto:knguy295@cougarnet.uh.edu">knguy295@cougarnet.uh.edu</a></p>
-  </div>
-</section>
-
-</body>
-</html>
+<!-- FUN FACTS -->
+<secti
