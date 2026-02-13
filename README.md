@@ -1,3 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7f5f2;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.custom-nav {
+    background-color: #1f1f1f;
+    padding: 15px;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 150px 0;
+    background: #eae6df;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.alt-bg {
+    background-color: #eae6df;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    background: #8c6f5c;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.custom-btn {
+    background-color: #8c6f5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #6f5647;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
