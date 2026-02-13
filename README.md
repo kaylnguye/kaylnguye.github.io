@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kayla Nguyen | Chemical Engineering</title>
+  Kayla Nguyen | Chemical Engineering
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
