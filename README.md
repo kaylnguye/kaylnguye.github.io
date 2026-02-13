@@ -38,9 +38,7 @@
   <div class="container">
     <h2>About Me</h2>
     <p>
-      I am a Chemical Engineering major passionate about catalysis, crystallization,
-      and industrial process optimization. My interests lie in both petrochemical
-      systems and pharmaceutical development.
+      I am a chemical engineering major interested in catalysis and crystal engineering. I plan to pursue in either petrochemical systems or pharmaceutical development.
     </p>
   </div>
 </section>
@@ -90,7 +88,7 @@
     <h2>Fun Facts</h2>
     <ul>
       <li>I play tennis 🎾</li>
-      <li>I love reading 📚</li>
+      <li>I like reading 📚</li>
       <li>I enjoy trying new foods 🍜</li>
     </ul>
   </div>
@@ -99,7 +97,7 @@
 <!-- Contact -->
 <section id="contact" class="section text-center">
   <div class="container">
-    <h2>Contact</h2>
+    <h2>Connect with me!</h2>
     <p>Email: <a href="mailto:knguy295@cougarnet.uh.edu">knguy295@cougarnet.uh.edu</a></p>
   </div>
 </section>
